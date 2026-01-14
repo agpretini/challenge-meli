@@ -129,15 +129,16 @@ Esto permite priorizar la detección de productos usados sin degradar la calidad
 ### Paso 1 – Construcción del dataset
 ```bash
 python src/data_process/build_dataset.py
-
+```
 ### Paso 2 – Feature Engineering
 ```bash
 python src/features/feat_eng_pipeline.py
+```
 
 ### Paso 3 – Construcción del dataset
 ```bash
 python src/model/train_infer_pipeline.py
-
+```
 
 
 
