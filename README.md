@@ -162,6 +162,17 @@ Esto permite priorizar la detección de productos usados sin degradar la calidad
 
 ## 🚀 Ejecución del Pipeline Final
 
+### Paso 0 - Set up del entorno
+#### Crear entorno virtual
+```bash
+python -m venv .venv
+.venv\Scripts\activate  # En Windows
+```
+
+#### Instalar dependencias
+```bash
+pip install -r requirements.txt
+```
 ### Paso 1 – Construcción del dataset
 ```bash
 python src/data_process/build_dataset.py
