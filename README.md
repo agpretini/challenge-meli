@@ -194,7 +194,6 @@ Debido a restricciones de tamaño, los datasets originales (`jsonlines`) y los d
 En particular, los siguientes archivos y directorios quedan excluidos del versionado:
 - `data/raw/`: datos originales provistos en el enunciado
 - `data/processed/`: datasets intermedios generados por el pipeline (se escluye el archivo train_base.parquet generado por build_dataset.py)
-- `data/artifacts/`: modelos entrenados, métricas y gráficos
 
 El proyecto es **totalmente reproducible** ejecutando los scripts en el orden indicado, partiendo de los archivos originales:
 1. `build_dataset.py`: genera los datasets base a partir de los archivos `jsonlines`.
