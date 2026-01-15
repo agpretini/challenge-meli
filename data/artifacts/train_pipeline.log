@@ -1,0 +1,21 @@
+2026-01-14 16:02:19,076 | INFO | Train shape: (90000, 40)
+2026-01-14 16:02:19,076 | INFO | Test shape: (10000, 40)
+2026-01-14 16:02:24,458 | INFO | accuracy: 0.8650
+2026-01-14 16:02:24,458 | INFO | roc_auc: 0.9465
+2026-01-14 16:02:24,459 | INFO | recall_used: 0.9234
+2026-01-14 16:02:24,459 | INFO | precision_used: 0.8095
+2026-01-14 16:05:54,273 | INFO | Starting FINAL TRAINING PIPELINE
+2026-01-14 16:05:54,273 | INFO | Loading FE datasets
+2026-01-14 16:05:54,362 | INFO | Train shape: (90000, 40)
+2026-01-14 16:05:54,363 | INFO | Test shape: (10000, 40)
+2026-01-14 16:05:54,363 | INFO | Training final XGBoost model
+2026-01-14 16:05:57,304 | INFO | Model saved at C:\Agus\MeLi_challenge\data\artifacts\xgb_final_model.pkl
+2026-01-14 16:05:57,763 | INFO | Feature importance saved at C:\Agus\MeLi_challenge\data\artifacts\xgb_feature_importance_top10.png
+2026-01-14 16:05:57,763 | INFO | Running inference on test set
+2026-01-14 16:05:57,882 | INFO | Final TEST metrics
+2026-01-14 16:05:57,883 | INFO | accuracy: 0.8650
+2026-01-14 16:05:57,883 | INFO | roc_auc: 0.9465
+2026-01-14 16:05:57,883 | INFO | recall_used: 0.9234
+2026-01-14 16:05:57,884 | INFO | precision_used: 0.8095
+2026-01-14 16:05:57,889 | INFO | Metrics saved at C:\Agus\MeLi_challenge\data\artifacts\final_test_metrics.csv
+2026-01-14 16:05:57,890 | INFO | FINAL PIPELINE COMPLETED SUCCESSFULLY
