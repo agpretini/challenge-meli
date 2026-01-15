@@ -175,16 +175,16 @@ pip install -r requirements.txt
 ```
 ### Paso 1 – Construcción del dataset
 ```bash
-python src/data_process/build_dataset.py
+python -m src.data_process.build_dataset
 ```
 ### Paso 2 – Feature Engineering
 ```bash
-python src/features/feat_eng_pipeline.py
+python -m src.features.feat_eng_pipeline
 ```
 
-### Paso 3 – Construcción del dataset
+### Paso 3 – Entrenamiento del modelo e Inferencia
 ```bash
-python src/model/train_infer_pipeline.py
+python -m src.model.train_infer_pipeline
 ```
 
 ## Resultados sobre el set de Test
