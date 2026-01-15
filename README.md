@@ -27,7 +27,7 @@ Cada etapa está implementada como un **script ejecutable independiente**, prior
 ## 📁 Estructura del proyecto
 
 ```text
-MeLi_challenge/
+challenge-meli/
 │
 ├── .venv/                       # Virtual environment del proyecto
 │
@@ -186,6 +186,21 @@ python -m src.features.feat_eng_pipeline
 ```bash
 python -m src.model.train_infer_pipeline
 ```
+
+## Reproducibilidad y gestión de datos
+
+Debido a restricciones de tamaño, los datasets originales (`jsonlines`) y los datasets intermedios generados durante el procesamiento (`.parquet`) **no se incluyen en este repositorio**.
+
+En particular, los siguientes archivos y directorios quedan excluidos del versionado:
+- `data/raw/`: datos originales provistos en el enunciado
+- `data/processed/`: datasets intermedios generados por el pipeline (se escluye el archivo train_base.parquet generado por build_dataset.py)
+- `data/artifacts/`: modelos entrenados, métricas y gráficos
+
+El proyecto es **totalmente reproducible** ejecutando los scripts en el orden indicado, partiendo de los archivos originales:
+1. `build_dataset.py`: genera los datasets base a partir de los archivos `jsonlines`.
+2. `feat_eng_pipeline.py`: aplica el proceso de feature engineering y genera los datasets finales.
+3. `train_infer_pipeline.py`: entrena el modelo final y realiza la inferencia sobre el conjunto de test.
+
 
 ## Resultados sobre el set de Test
 - Accuracy: 0.865 --> superando el umbral requerido de 0.86
